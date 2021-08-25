@@ -11,7 +11,7 @@ description: Welcome to my homepage.
 
 <a href="/">
 <img 
-style="width: 200px; border: 2px solid #FFFFFF"
+style="width: 140px; border: 2px solid #FFFFFF"
 src="assets/images/Website_Photo.png">
 </a>
 
