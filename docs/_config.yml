@@ -35,8 +35,8 @@ plugins:
   - jekyll-feed
 
 header_pages:
-    - cv.md
-    - pubs.md
+    - cv.markdown
+    - pubs.markdown
     - about.markdown
     - posts.markdown
 # Exclude from processing.
