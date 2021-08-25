@@ -4,3 +4,4 @@ _site
 .jekyll-metadata
 vendor
 _posts/2021-08-23-welcome-to-jekyll.markdown
+_includes/analytics.html

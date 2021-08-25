@@ -1,0 +1,28 @@
+<footer class="site-footer h-card">
+    <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+    <div class="wrapper">
+        <div class="footer-col-wrapper">
+            
+            <!--
+            < !-- logo on left -- >
+            <a href="/">
+                <div style="float:left; padding-left:20px; padding-top:7px; padding-bottom:7px;">
+                <img
+                    style="float: left; padding-top:0px; border: 2px solid #484848"
+                    src="/assets/graphics/general/logo_small.png">
+                </div>
+            </a>
+            -->
+            
+            <!-- name and email on right -->
+            <div class="footer-col-wrapper">
+                <div style="padding-top:11px" align="right">
+                    {{ site.author }} <br>
+                    <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
