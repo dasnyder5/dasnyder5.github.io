@@ -4,14 +4,22 @@ title: "Publications"
 permalink: /publications/
 ---
 
-A list of my publications.
+A list of my publications in reverse chronological order.
+Boldface indicates the presenter, where relevant. Superscripts denote equal contributions 
 
 ## Princeton University 
 ### IRoM Laboratory
 
+Failure Prediction with Statistical Guarantees for Vision-Based Robot Control
+
+Alec Farid<sup>*</sup>, David Snyder<sup>*</sup>, Allen Z. Ren, and Anirudha Majumdar
+
+Accessible [here](https://arxiv.org/abs/2202.05894)
+
+
 Generating Adversarial Disturbances for Controller Verification
 
-Udaya Ghai, **David Snyder**, Anirudha Majumdar, Elad Hazan; Proceedings of the 3rd Conference on Learning for Dynamics and Control, PMLR 144:1192-1204
+Udaya Ghai<sup>*</sup>, **David Snyder**<sup>*</sup>, Anirudha Majumdar, Elad Hazan; Proceedings of the 3rd Conference on Learning for Dynamics and Control, PMLR 144:1192-1204
 
 Accessible [here](http://proceedings.mlr.press/v144/ghai21a/ghai21a.pdf)
 
