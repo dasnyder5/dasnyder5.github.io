@@ -14,14 +14,14 @@ Failure Prediction with Statistical Guarantees for Vision-Based Robot Control
 
 Alec Farid<sup>*</sup>, David Snyder<sup>*</sup>, Allen Z. Ren, and Anirudha Majumdar
 
-Accessible [here](https://arxiv.org/abs/2202.05894)
+Accepted to RSS 2022. Arxiv version accessible [here](https://arxiv.org/abs/2202.05894)
 
 
 Generating Adversarial Disturbances for Controller Verification
 
 Udaya Ghai<sup>*</sup>, **David Snyder**<sup>*</sup>, Anirudha Majumdar, Elad Hazan; Proceedings of the 3rd Conference on Learning for Dynamics and Control, PMLR 144:1192-1204
 
-Accessible [here](http://proceedings.mlr.press/v144/ghai21a/ghai21a.pdf)
+Selected for Oral Presentation at L4DC 2021. PMLR version accessible [here](http://proceedings.mlr.press/v144/ghai21a/ghai21a.pdf)
 
 ## University of Maryland, College Park 
 ### Collective Dynamics and Control Laboratory
