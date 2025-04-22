@@ -3,16 +3,16 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Nathaniel
+first_name: David
 middle_name: 
-last_name: Simon
+last_name: Snyder
 email: dasnyder@princeton.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Robotics PhD Candidate at Princeton University
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: robotics, UAV, wind  # add your own keywords or leave empty
+keywords: Robotics, Safety, Generalization, Evaluation  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -66,10 +66,10 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: natesimon
+github_username: dasnyder5
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
-linkedin_username: nathaniel-j-simon # your LinkedIn user name
+linkedin_username: david-a-snyder # your LinkedIn user name
 scholar_userid: # 1533563416672490167
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
@@ -103,7 +103,7 @@ contact_note: >
 google_analytics:  # your Goole Analytics measurement ID (format: G-XXXXXXXXXX)
 panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
 
-google_site_verification: oMCKPejI3S5XvRGVPK5Tq1BWoDHlaTX7AyYxaGEc3Tk
+google_site_verification: yYECd5w-wY68S0grytgfAOechJWyTCOSXPHfEOfBOOE #oMCKPejI3S5XvRGVPK5Tq1BWoDHlaTX7AyYxaGEc3Tk
 bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
