@@ -1,0 +1,95 @@
+---
+---
+
+@inproceedings{simon2023mononav,
+  title={{MonoNav: MAV Navigation via Monocular Depth Estimation and Reconstruction}},
+  author={Simon, Nathaniel and Majumdar, Anirudha},
+  booktitle={International Symposium on Experimental Robotics (ISER)},
+  preview={MonoNav_Anchor.png},
+  bibtex_show={true},
+  abstract={A major challenge in deploying the smallest of Micro Aerial Vehicle (MAV) platforms (< 100 g) is their inability to carry sensors that provide high-resolution metric depth information (e.g., LiDAR or stereo cameras). Current systems rely on end-to-end learning or heuristic approaches that directly map images to control inputs, and struggle to fly fast in unknown environments. In this work, we ask the following question: using only a monocular camera, optical odometry, and offboard computation, can we create metrically accurate maps to leverage the powerful path planning and navigation approaches employed by larger state-of-the-art robotic systems to achieve robust autonomy in unknown environments? We present MonoNav: a fast 3D reconstruction and navigation stack for MAVs that leverages recent advances in depth prediction neural networks to enable metrically accurate 3D scene reconstruction from a stream of monocular images and poses. MonoNav uses off-the-shelf pre-trained monocular depth estimation and fusion techniques to construct a map, then searches over motion primitives to plan a collision-free trajectory to the goal. In extensive hardware experiments, we demonstrate how MonoNav enables the Crazyflie (a 37 g MAV) to navigate fast (0.5 m/s) in cluttered indoor environments. We evaluate MonoNav against a state-of-the-art end-to-end approach, and find that the collision rate in navigation is significantly reduced (by a factor of 4). This increased safety comes at the cost of conservatism in terms of a 22\% reduction in goal completion.},
+  award={Best Paper Award at the [Learning Robot Super Autonomy Workshop](https://wp.nyu.edu/workshopiros2023superautonomy/) (IROS 2023)},
+  award_name={Best Paper},
+  website={/mononav/},
+  selected={true},
+  arxiv={2311.14100},
+  code={https://github.com/natesimon/MonoNav/},
+  year={2023}
+}
+
+@inproceedings{simon2023flowdrone,
+  title={FlowDrone: wind estimation and gust rejection on UAVs using fast-response hot-wire flow sensors},
+  author={Simon, Nathaniel and Ren, Allen Z and Piqu{\'e}, Alexander and Snyder, David and Barretto, Daphne and Hultmark, Marcus and Majumdar, Anirudha},
+  booktitle={International Conference on Robotics and Automation (ICRA)},
+  pages={5393--5399},
+  year={2023},
+  organization={IEEE},
+  preview={Flowdrone.png},
+  bibtex_show={true},
+  abstract={Unmanned aerial vehicles (UAVs) are finding use in applications that place increasing emphasis on robustness to external disturbances including extreme wind. However, traditional multirotor UAV platforms do not directly sense wind; conventional flow sensors are too slow, insensitive, or bulky for widespread integration on UAVs. Instead, drones typically observe the effects of wind indirectly through accumulated errors in position or trajectory tracking. In this work, we integrate a novel flow sensor based on micro-electro-mechanical systems (MEMS) hot-wire technology developed in our prior work onto a multirotor UAV for wind estimation. These sensors are omnidirectional, lightweight, fast, and accurate. In order to achieve superior tracking performance in windy conditions, we train a `wind-aware' residual-based controller via reinforcement learning using simulated wind gusts and their aerodynamic effects on the drone. In extensive hardware experiments, we demonstrate the wind-aware controller outperforming two strong `wind-unaware' baseline controllers in challenging windy conditions.},
+  selected={true},
+  pdf={https://ieeexplore.ieee.org/document/10160454},
+  video={https://youtu.be/KWqkH9Z-338},
+  website={/flowdrone/},
+  arxiv={2210.05857},
+  year={2023}
+}
+
+@article{simon2022fast,
+  title={Fast-response hot-wire flow sensors for wind and gust estimation on UAVs},
+  author={Simon, Nathaniel and Piqu{\'e}, Alexander and Snyder, David and Ikuma, Kyle and Majumdar, Anirudha and Hultmark, Marcus},
+  journal={Measurement Science and Technology},
+  volume={34},
+  number={2},
+  pages={025109},
+  url={https://arxiv.orgf/abs/2209.06643},
+  arxiv={2209.06643},
+  preview={MST.jpeg},
+  bibtex_show={true},
+  abstract={Due to limitations in available sensor technology, unmanned aerial vehicles (UAVs) lack an active sensing capability to measure turbulence, gusts, or other unsteady aerodynamic phenomena. Conventional in situ anemometry techniques fail to deliver in the harsh and dynamic multirotor environment due to form factor, resolution, or robustness requirements. To address this capability gap, a novel, fast-response sensor system to measure a wind vector in two dimensions is introduced and evaluated. This system, known as `MAST' (for MEMS Anemometry Sensing Tower), leverages advances in microelectromechanical (MEMS) hot-wire devices to produce a solid-state, lightweight, and robust flow sensor suitable for real-time wind estimation onboard a UAV. The MAST uses five pentagonally-arranged microscale hot-wires to determine the wind vector's direction and magnitude. The MAST's performance was evaluated in a wind tunnel at speeds up to 5~m/s and orientations of 0 - 360 degrees. A neural network sensor model was trained from the wind tunnel data to estimate the wind vector from sensor signals. The average error of the sensor is 0.14 m/s for speed and 1.6 degrees for direction. Furthermore, 95% of measurements are within 0.36 m/s error for speed and 5.0 degree error for direction. With a bandwidth of 570 Hz determined from square-wave testing, the MAST stands to greatly enhance UAV wind estimation capabilities and enable capturing relevant high-frequency phenomena in flow conditions.},
+  selected={true},
+  pdf={https://iopscience.iop.org/article/10.1088/1361-6501/ac9f5c/pdf},
+  year={2022}
+}
+
+@inproceedings{sedky2024distributed,
+  title={{Distributed feather-inspired flow control mitigates stall and expands flight envelope.}},
+  author={Sedky, Girguis and Simon, Nathaniel and Othman, Ahmed K. and Wiswell, Hannah and Wissa, Aimy.},
+  journal={Proceedings of the National Academy of Sciences (PNAS)},
+  volume={121},
+  number={45},
+  bibtex_show={true},
+  preview={flight_test.png},
+  abstract={Multiple rows of feathers, known as the covert feathers, contour the upper and lower surfaces of bird wings. These feathers have been observed to deploy passively during high angle of attack maneuvers and are suggested to play an aerodynamic role. However, there have been limited attempts to capture their underlying flow physics or assess the function of multiple covert rows. Here, we first identify two flow control mechanisms associated with a single covert-inspired flap and their location sensitivity: a pressure dam mechanism and a previously unidentified shear layer interaction mechanism. We then investigate the additivity of these mechanisms by deploying multiple rows of flaps. We find that aerodynamic benefits conferred by the shear layer interaction are additive, whereas benefits conferred by the pressure dam effect are not. Nevertheless, both mechanisms can be exploited simultaneously to maximize aerodynamic benefits and mitigate stall. In addition to wind tunnel experiments, we implement multiple rows of covert-inspired flaps on a bird-scale remote-controlled aircraft. Flight tests reveal passive deployment trends similar to those observed in bird flight and comparable aerodynamic benefits to wind tunnel experiments. These results indicate that we can enhance aircraft controllability using covert-inspired flaps and form insights into the aerodynamic role of covert feathers in avian flight.},
+  selected={true},
+  pdf={https://www.pnas.org/doi/10.1073/pnas.2409268121},
+  video={https://www.youtube.com/watch?v=dLlJRujBWos},
+  year={2024}
+}
+
+@article{snyder2023online,
+  title={Online Learning for Obstacle Avoidance},
+  author={Snyder, David and Booker, Meghan and Simon, Nathaniel and Xia, Wenhan and Suo, Daniel and Hazan, Elad and Majumdar, Anirudha},
+  journal={Conference on Robot Learning (CoRL)},
+  url={https://arxiv.org/abs/2306.08776},
+  arxiv={2306.08776},
+  preview={olc_anchor.png},
+  bibtex_show={true},
+  abstract={We approach the fundamental problem of obstacle avoidance for robotic systems via the lens of online learning. In contrast to prior work that either assumes worst-case realizations of uncertainty in the environment or a stationary stochastic model of uncertainty, we propose a method that is efficient to implement and provably grants instance-optimality with respect to perturbations of trajectories generated from an open-loop planner (in the sense of minimizing worst-case regret). The resulting policy adapts online to realizations of uncertainty and provably compares well with the best obstacle avoidance policy in hindsight from a rich class of policies. The method is validated in simulation on a dynamical system environment and compared to baseline open-loop planning and robust Hamilton- Jacobi reachability techniques. Further, it is implemented on a hardware example where a quadruped robot traverses a dense obstacle field and encounters input disturbances due to time delays, model uncertainty, and dynamics nonlinearities.},
+  selected={true},
+  pdf={https://arxiv.org/pdf/2306.08776.pdf},
+  year={2023}
+}
+
+@article{simon2024omnidirectional,
+  title={Omnidirectional flow sensor (US Patent App. 18/367,015)},
+  author={Simon, Nathaniel and Piqu{\'e}, Alexander and Snyder, David and Ikuma, Kyle and Majumdar, Anirudha and Hultmark, Marcus},
+  year={2024},
+  publisher={Google Patents},
+  note={US Patent App. 18/367,015},
+  website={https://patents.google.com/patent/US20240200997A1/en},
+  preview={MAST_patent.png},
+  bibtex_show={true},
+  abstract={Disclosed is a fast-response sensor system to measure a fluid vector in a plurality of dimensions. This system, known as ‘MAST’ (for MEMS Anemometry Sensing Tower), utilizes microelectromechanical (MEMS) hot-wire devices to produce a solid-state, lightweight, and robust flow sensor system suitable for, e.g., real-time wind estimation onboard a UAV. The MAST uses three through eighteen polygonally-arranged microscale flow sensors to determine the fluid's vector's direction and magnitude.},
+  patents={true},
+}

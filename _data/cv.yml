@@ -1,0 +1,39 @@
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD, Mechanical and Aerospace Engineering
+      institution: Princeton University
+      year: 2020-Present
+    - title: MS, Mechanical Engineering
+      institution: Stanford University
+      year: 2020
+    - title: BS, Mechanical Engineering
+      institution: Stanford University
+      year: 2019
+
+- title: Work Experience
+  type: time_table
+  contents:
+    - title: Product Manager Intern
+      institution: <a href="https://somewearlabs.com/">Somewear Labs</a>
+      year: May-Oct 2019
+    - title: Mechanical Engineering Intern
+      institution: <a href="https://www.redwoodmaterials.com/">Redwood Materials</a>
+      year: Oct-Dec 2018
+    - title: Design Engineer Intern
+      institution: <a href="https://www.boydcorp.com/aavid.html">Boyd Corp</a>
+      year: Jun-Aug 2018
+    - title: Aviation Systems Engineer Intern
+      institution: <a href="https://www.garmin.com/en-US/c/aviation/">Garmin International</a>
+      year: Jun-Aug 2017
+    - title: France-Stanford Fellow
+      institution: <a href="https://em2c.centralesupelec.fr/en">Laboratoire Énergetique Moleculaire et Macroscopique, Combustion </a>
+      year: Jun-Aug 2016
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - title: Guggenheim Second Year Fellowship, Princeton University
+      year: 2021
+    - title: National Science Foundation Graduate Research Fellowship Program
+      year: 2020
