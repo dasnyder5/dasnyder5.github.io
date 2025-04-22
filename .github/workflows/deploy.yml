@@ -19,8 +19,14 @@ jobs:
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.0.2'
+        ruby-version: '3.3.8'
         bundler-cache: true
+    - name: Use Ruby and Bundler version from Gemfile.lock
+        run: |
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
+        env:
+          BUNDLER_VERSION: 2.6.8 # Set the desired Bundler version
     - name: Install deps
       run: |
         npm install -g mermaid.cli
