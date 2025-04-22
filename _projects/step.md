@@ -3,55 +3,45 @@ layout: default
 permalink: /step/
 title: STEP
 description: Near-Optimal Sequential Testing for Efficient Policy Comparison
-img: assets/video/step_policy_synthesis.mp4
+img: assets/img/policy_synthesis.png
 importance: 1
 category: work
 ---
 
-<h1><center><span style="font-weight:bold;">Go with the Flow:</span><br>Micro Aerial Vehicles<br>as Lagrangian Particles in<br>the Atmospheric Boundary Layer</center></h1>
+<h1><center><span style="font-weight:bold;">STEP:</span><br>Sequential Testing<br>for Efficient Policy<br>Comparison in Robotics</center></h1>
 <br>
 <table style="width: 80%; max-width: 800px; margin: 0 auto;">
     <tr>
         <td style="text-align: center; width: 100px;">
-            <span style="font-size: 22px; font-weight:bold;"><a href="https://natesimon.github.io/" target="_blank">Nathaniel Simon</a></span>
+            <span style="font-size: 22px; font-weight:bold;"><a href="https://dasnyder5.github.io/" target="_blank">David Snyder</a></span>
         </td>
         <td style="text-align: center; width: 100px;">
-            <span style="font-size: 22px; font-weight:bold;"><a href="https://www.linkedin.com/in/skywalkerli/" target="_blank">Skywalker Li</a></span>
+            <span style="font-size: 22px; font-weight:bold;"><a href="https://aasherh.github.io/" 
+            target="_blank">Asher Hancock</a></span>
         </td>
     </tr>
 </table>
 <table style="width: 60%; max-width: 800px; margin: 0 auto;">
     <tr>
             <td style="text-align: center; width: 100px;">
-            <span style="font-size: 22px; font-weight:bold;"><a href="https://mae.princeton.edu/people/graduate-students/conlin-0" target="_blank">Nick Conlin</a></span>
+            <span style="font-size: 22px; font-weight:bold;"><a href="https://abadithela.github.io/" target="_blank">Apurva Badithela</a></span>
         </td>
     </tr>
 </table>
 <table style="width: 60%; max-width: 800px; margin: 0 auto;">
     <tr>
         <td style="text-align: center; width: 100px;">
-            <span style="font-size: 22px; font-weight:bold;"><a href="https://sites.google.com/view/njwei" target="_blank">Nathan Wei</a></span>
-        </td>
-        <td style="text-align: center; width: 100px;">
-            <span style="font-size: 22px; font-weight:bold;"><a href="https://www.girguissedky.com/" target="_blank">Girguis Sedky</a></span>
-        </td>
-    </tr>
-    <tr>
-        <td style="text-align: center; width: 100px;">
             <span style="font-size: 22px; font-weight:bold;"><a href="https://irom-lab.princeton.edu/majumdar/" target="_blank">Anirudha Majumdar</a></span>
-        </td>
-        <td style="text-align: center; width: 100px;">
-            <span style="font-size: 22px; font-weight:bold;"><a href="https://mae.princeton.edu/people/faculty/hultmark" target="_blank">Marcus Hultmark</a></span>
         </td>
     </tr>
     <tr>
     <td align=center width=40px><center><span style="font-size:28px">
         <a href="https://irom-lab.princeton.edu/">
-            <img src="../assets/img/irom_lab_logo.png" alt="IRoM" style="width: 80%;">
+            <img src="../assets/img/irom_lab_logo.png" alt="IRoM Lab" style="width: 80%;">
         </a></span></center>
     </td>
     <td align=center width=40px><center><span style="font-size:28px">
-        <a href="https://fluids.princeton.edu/" target="_blank"><img src="../assets/img/fast_lab_logo.jpg" alt="FAST Lab Logo" style="width: 30%;"></a></span></center>
+        <a href="https://www.tri.global/" target="_blank"><img src="../assets/img/TRI_logo.jpg" alt="Toyota Research Institute" style="width: 30%;"></a></span></center>
     </td>
     </tr>
 </table>
