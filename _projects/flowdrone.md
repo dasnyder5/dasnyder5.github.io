@@ -168,8 +168,8 @@ This video, "Improving Drone Performance in Wind with Novel, Fast, Sensors" rece
 
 <div class="publications">
 <!-- <h2>selected publications</h2> -->
-<!-- {% bibliography -f papers -q @*[title=Fast-response hot-wire flow sensors for wind and gust estimation on UAVs] %} -->
-<!-- {% bibliography -f papers -q @*[title=FlowDrone: wind estimation and gust rejection on UAVs using fast-response hot-wire flow sensors] %} -->
+{% bibliography -f papers -q @*[title=Fast-response hot-wire flow sensors for wind and gust estimation on UAVs] %}
+{% bibliography -f papers -q @*[title=FlowDrone: wind estimation and gust rejection on UAVs using fast-response hot-wire flow sensors] %}
 </div>
 
 <br>
