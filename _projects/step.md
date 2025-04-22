@@ -3,7 +3,7 @@ layout: default
 permalink: /step/
 title: STEP
 description: Near-Optimal Sequential Testing for Efficient Policy Comparison
-img: assets/img/LaDrone_Outside.jpeg
+img: assets/video/step_policy_synthesis.mp4
 importance: 1
 category: work
 ---

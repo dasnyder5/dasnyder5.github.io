@@ -4,7 +4,7 @@ permalink: /ladrone/
 title: LaDrone
 description: Micro Aerial Vehicles as Lagrangian Particles in the Atmospheric Boundary Layer
 img: assets/img/LaDrone_Outside.jpeg
-importance: 1
+importance: 2
 category: work
 ---
 

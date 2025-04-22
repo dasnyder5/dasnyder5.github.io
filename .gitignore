@@ -1,4 +1,5 @@
 _site
+_projects_dep
 .bundle
 .sass-cache
 .jekyll-cache
