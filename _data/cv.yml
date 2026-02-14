@@ -1,39 +1,47 @@
 - title: Education
   type: time_table
   contents:
+    - title: Postdoctoral Research Fellow, Electrical and Systems Engineering
+      institution: University of Pennsylvania
+      year: 2025 - present
     - title: PhD, Mechanical and Aerospace Engineering
       institution: Princeton University
-      year: 2020-Present
-    - title: MS, Mechanical Engineering
-      institution: Stanford University
-      year: 2020
-    - title: BS, Mechanical Engineering
-      institution: Stanford University
-      year: 2019
+      year: 2025
+    - title: MS, Mechanical and Aerospace Engineering
+      institution: Princeton University
+      year: 2022
+    - title: BS, Aeronautical Engineering
+      institution: University of Maryland, College Park
+      year: 2018
+    - title: BS, Economics
+      institution: University of Maryland, College Park
+      year: 2018
 
 - title: Work Experience
   type: time_table
   contents:
-    - title: Product Manager Intern
-      institution: <a href="https://somewearlabs.com/">Somewear Labs</a>
-      year: May-Oct 2019
-    - title: Mechanical Engineering Intern
-      institution: <a href="https://www.redwoodmaterials.com/">Redwood Materials</a>
-      year: Oct-Dec 2018
-    - title: Design Engineer Intern
-      institution: <a href="https://www.boydcorp.com/aavid.html">Boyd Corp</a>
-      year: Jun-Aug 2018
-    - title: Aviation Systems Engineer Intern
-      institution: <a href="https://www.garmin.com/en-US/c/aviation/">Garmin International</a>
-      year: Jun-Aug 2017
-    - title: France-Stanford Fellow
-      institution: <a href="https://em2c.centralesupelec.fr/en">Laboratoire Énergetique Moleculaire et Macroscopique, Combustion </a>
-      year: Jun-Aug 2016
+    - title: Graduate Research Intern
+      institution: <a href="https://www.tri.global/">Toyota Research Institute</a>
+      year: Jun 2024 - Sep 2024
+    - title: Graduate Research Intern
+      institution: <a href="https://sites.google.com/view/gbrainprinceton/home">Google DeepMind Princeton</a>
+      year: Sep 2022 - Aug 2023
+    - title: Technical Aide
+      institution: <a href="https://www.jhuapl.edu/">JHU Applied Physics Laboratory</a>
+      year: Jan 2019 - Aug 2019
+    - title: Undergraduate Research Intern
+      institution: <a href="https://www.jhuapl.edu/">JHU Applied Physics Laboratory</a>
+      year: Jun - Aug 2018
+      year: Jun - Aug 2017
+    # - title: France-Stanford Fellow
+    #   institution: <a href="https://em2c.centralesupelec.fr/en">Laboratoire Énergetique Moleculaire et Macroscopique, Combustion </a>
+    #   year: Jun-Aug 2016
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - title: Guggenheim Second Year Fellowship, Princeton University
-      year: 2021
     - title: National Science Foundation Graduate Research Fellowship Program
-      year: 2020
+      year: 2019 - 2024
+    - title: Gordon Y.S. Wu Fellowship, Princeton University
+      year: 2019 - 2024
+    - 
