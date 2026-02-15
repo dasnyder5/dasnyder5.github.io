@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
+title: Teaching
 description: as a graduate teaching assistant
 nav: true
 nav_order: 4

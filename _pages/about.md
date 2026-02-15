@@ -31,7 +31,8 @@ My research develops theory for robotic systems which holds nonasymptotically (i
 
 During my PhD I developed methods tailored to each of these domains. In the adversarial context, I developed an algorithm for learned controller validation in the setting of linear systems ([MOTR](...)) using techniques from regret minimization in online learning; this was later lifted to the higher-level problem of obstacle avoidance ([OLC](...)). This was one of the first examples of practical implementation of online regret-minimizing controllers on hardware. In the stochastic context, we developed methods for online failure prediction and mitigation via extending PAC-Bayes generalization bounds [FP](). More recently, we have applied techniques from sequential analysis and safe, anytime-valid inference (SAVI) for multivalent problems of _evaluation_ within the robotics context. This has led to fruitful developments within the context of policy comparison and active data collection, as illustrated by [STEP](). 
 
-Prior to my PhD, I received my bachelor's degree from the [University of Maryland, College Park]() (go Terps!). Outside of work I enjoy cycling, chess, classical music, and playing tennis. 
+Prior to my PhD, I received my bachelor's degree from the [University of Maryland, College Park]() (go Terps!). Outside of work I enjoy cycling, chess, classical music, and playing tennis.
+
 <!-- I am a PhD Candidate in the [Intelligent Robot Motion Lab](https://irom-lab.princeton.edu/) and [FAST Group](https://fluids.princeton.edu/), co-advised by [Ani Majumdar](https://irom-lab.princeton.edu/majumdar/) and [Marcus Hultmark](https://mae.princeton.edu/people/faculty/hultmark). My research aims to improve aerial vehicle performance in the real world through tightly-integrated perception, planning, and control. Specifically, using high-dimensional sensors (such as vision and flow sensing) and machine learning to unlock new capabilities. During my PhD, I invented an omnidirectional flow sensor for UAVs [(patent)](#patents) and developed a wind-aware flight controller for gust rejection [(FlowDrone)](/flowdrone/). In addition, I advanced state-of-the-art in monocular micro aerial vehicle navigation through simultaneous depth estimation and 3D reconstruction [(MonoNav)](/mononav/). My work aims to drive transformative autonomy in robotics applications such as urban air mobility, package delivery, infrastructure inspection, and ISR.
 
 Here is a 3-min overview of my recent work, from [Princeton Research Day](https://researchday.princeton.edu/):
@@ -51,5 +52,6 @@ Here is a 3-min overview of my recent work, from [Princeton Research Day](https:
 </div> -->
 
 <!-- Prior to the PhD, I received bachelor's and master's degrees in Mechanical Engineering from [Stanford University](https://me.stanford.edu/). Outside of work, I love to fly aircraft, and I am a member of both the [Princeton Flying Club](http://www.princetonflyingclub.com/) and [Soaring Tigers](https://soaringtigers.org/). I recently earned my instrument rating, and have written about my experience [here](./projects/instrument). -->
+
 
 Feel free to contact me at: ``dsnyder5`` at ``seas`` dot ``upenn`` dot ``edu``.
