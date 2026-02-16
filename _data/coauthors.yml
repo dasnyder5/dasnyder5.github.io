@@ -1,3 +1,15 @@
+"Booker":
+  - firstname: ["Meghan"]
+    url: https://scholar.google.com/citations?user=I1E6K7YAAAAJ&hl=en
+
+"Farid":
+  - firstname: ["Alec"]
+    url: https://www.aalec.co/home
+
+"Simon":
+  - firstname: ["Nate", "Nathaniel"]
+    url: https://natesimon.github.io/
+
 "Ren":
   - firstname: ["Allen", "Allen Z"]
     url: https://zhiyir.mycpanel.princeton.edu/
@@ -9,3 +21,27 @@
 "Ikuma":
   - firstname: ["Kyle"]
     url: https://kyleikuma.wordpress.com/ 
+
+"Nishimura": 
+  - firstname: ["Haruki"]
+    url: https://harukins.github.io/
+
+"Itkina":
+  - firstname: ["Masha"]
+    url: https://mashaitkina.weebly.com/
+
+"Matni":
+  - firstname: ["Nik", "Nikolai"]
+    url: https://nikolaimatni.github.io/
+
+"Pappas":
+  - firstname: ["George", "George J"]
+    url: https://www.georgejpappas.org/
+
+"Badithela":
+  - firstname: ["Apurva"]
+    url: https://abadithela.github.io/
+
+"Zha": 
+  - firstname: ["Lihan"]
+    url: https://lihzha.github.io/
