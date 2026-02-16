@@ -1,7 +1,9 @@
 <div class="publications">
-  <h2 id="selected-publications">publications</h2>
+  <h2 id="selected-publications">Publications</h2>
   {% bibliography -f papers -q @*[selected=true]* %}
-  <h2 id="patents">patents</h2>
+  <h2 id="patents">Patents</h2>
   {% bibliography -f papers -q @*[patents=true]* %}
+  <h2 id="PhD Thesis">PhD Thesis</h2>
+  {% bibliography -f papers -q @*[phdthesis=true]* %}
 </div>
 
