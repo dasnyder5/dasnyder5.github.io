@@ -1,20 +1,119 @@
 ---
 ---
 
-@inproceedings{simon2023mononav,
-  title={{MonoNav: MAV Navigation via Monocular Depth Estimation and Reconstruction}},
-  author={Simon, Nathaniel and Majumdar, Anirudha},
-  booktitle={International Symposium on Experimental Robotics (ISER)},
-  preview={MonoNav_Anchor.png},
-  bibtex_show={true},
-  abstract={A major challenge in deploying the smallest of Micro Aerial Vehicle (MAV) platforms (< 100 g) is their inability to carry sensors that provide high-resolution metric depth information (e.g., LiDAR or stereo cameras). Current systems rely on end-to-end learning or heuristic approaches that directly map images to control inputs, and struggle to fly fast in unknown environments. In this work, we ask the following question: using only a monocular camera, optical odometry, and offboard computation, can we create metrically accurate maps to leverage the powerful path planning and navigation approaches employed by larger state-of-the-art robotic systems to achieve robust autonomy in unknown environments? We present MonoNav: a fast 3D reconstruction and navigation stack for MAVs that leverages recent advances in depth prediction neural networks to enable metrically accurate 3D scene reconstruction from a stream of monocular images and poses. MonoNav uses off-the-shelf pre-trained monocular depth estimation and fusion techniques to construct a map, then searches over motion primitives to plan a collision-free trajectory to the goal. In extensive hardware experiments, we demonstrate how MonoNav enables the Crazyflie (a 37 g MAV) to navigate fast (0.5 m/s) in cluttered indoor environments. We evaluate MonoNav against a state-of-the-art end-to-end approach, and find that the collision rate in navigation is significantly reduced (by a factor of 4). This increased safety comes at the cost of conservatism in terms of a 22\% reduction in goal completion.},
-  award={Best Paper Award at the [Learning Robot Super Autonomy Workshop](https://wp.nyu.edu/workshopiros2023superautonomy/) (IROS 2023)},
-  award_name={Best Paper},
-  website={/mononav/},
+# My lead work
+
+@inproceedings{ghai_snyder_generating_2021,
+	title = {{Generating} {Adversarial} {Disturbances} for {Controller} {Verification}},
+	author = {Ghai, Udaya and Snyder, David and Majumdar, Anirudha and Hazan, Elad},
+	booktitle = {Proceedings of the 3rd {Conference} on {Learning} for {Dynamics} and {Control} (L4DC 2021)},
+	preview ={ },
+  bibtex_show = {true},
+  abstract = {We consider the problem of generating maximally adversarial disturbances for a given controller assuming only blackbox access to it. We propose an online learning approach to this problem that adaptively generates disturbances based on control inputs chosen by the controller. The goal of the disturbance generator is to minimize regret versus a benchmark disturbance-generating policy class, i.e., to maximize the cost incurred by the controller as well as possible compared to the best possible disturbance generator in hindsight (chosen from a benchmark policy class). In the setting where the dynamics are linear and the costs are quadratic, we formulate our problem as an online trust region (OTR) problem with memory and present a new online learning algorithm (MOTR) for this problem. We prove that this method competes with the best disturbance generator in hindsight (chosen from a rich class of benchmark policies that includes linear-dynamical disturbance generating policies). We demonstrate our approach on two simulated examples: (i) synthetically generated linear systems, and (ii) generating wind disturbances for the popular PX4 controller in the AirSim simulator. On these examples, we demonstrate that our approach outperforms several baseline approaches (including H-infinity disturbance generation and gradient-based methods).},
+  award={Selected for Oral Presentation (< 10%) at the 3rd Conference on Learning for Dynamics and Control (L4DC 2021)},
+  award_name={Oral Presentation},
   selected={true},
-  arxiv={2311.14100},
-  code={https://github.com/natesimon/MonoNav/},
-  year={2023}
+  website={},
+  url = {https://proceedings.mlr.press/v144/ghai21a.html},
+  arxiv = {2012.06695}
+  month = may,
+  year = {2021},
+  publisher = {PMLR},
+  pages = {1192--1204},
+  issn = {2640-3498},
+}
+
+@inproceedings{snyder_online_2023,
+	title = {{Online} {Learning} for {Obstacle} {Avoidance}},
+  author = {Snyder, David and Booker, Meghan and Simon, Nathaniel and Xia, Wenhan and Suo, Daniel and Hazan, Elad and Majumdar, Anirudha},
+	booktitle = {Proceedings of {The} 7th {Conference} on {Robot} {Learning} (CoRL 2023)},
+	preview = {olc_anchor.png},
+  bibtex_show = {true},
+  abstract = {We approach the fundamental problem of obstacle avoidance for robotic systems via the lens of online learning. In contrast to prior work that either assumes worst-case realizations of uncertainty in the environment or a stationary stochastic model of uncertainty, we propose a method that is efficient to implement and provably grants instance-optimality with respect to perturbations of trajectories generated from an open-loop planner (in the sense of minimizing worst-case regret). The resulting policy adapts online to realizations of uncertainty and provably compares well with the best obstacle avoidance policy in hindsight from a rich class of policies. The method is validated in simulation on a dynamical system environment and compared to baseline open-loop planning and robust Hamilton-Jacobi reachability techniques. Further, it is implemented on a hardware example where a quadruped robot traverses a dense obstacle field and encounters input disturbances due to time delays, model uncertainty, and dynamics nonlinearities.},
+	selected={true},
+  website={},
+	url = {https://proceedings.mlr.press/v229/snyder23a.html},
+  arxiv = {2306.08776},
+  month = dec,
+	year = {2023},
+	publisher = {PMLR},
+	pages = {2926--2954},
+  issn = {2640-3498},
+}
+
+@inproceedings{farid_snyder_failure_2022,
+	title = {{Failure} {Prediction} with {Statistical} {Guarantees} for {Vision}-{Based} {Robot} {Control}},
+	author = {Farid, Alec and Snyder, David and Ren, Allen Z. and Majumdar, Anirudha},
+	booktitle = {Proceedings of the {Robotics}: {Science} and {Systems} XVIII {Conference} ({RSS} 2022)},
+  preview = {},
+  bibtex_show = {true},
+  abstract = {We are motivated by the problem of performing failure prediction for safety-critical robotic systems with high-dimensional sensor observations (e.g., vision). Given access to a black-box control policy (e.g., in the form of a neural network) and a dataset of training environments, we present an approach for synthesizing a failure predictor with guaranteed bounds on false-positive and false-negative errors. In order to achieve this, we utilize techniques from Probably Approximately Correct (PAC)-Bayes generalization theory. In addition, we present novel class-conditional bounds that allow us to trade-off the relative rates of false-positive vs. false-negative errors. We propose algorithms that train failure predictors (that take as input the history of sensor observations) by minimizing our theoretical error bounds. We demonstrate the resulting approach using extensive simulation and hardware experiments for vision-based navigation with a drone and grasping objects with a robotic manipulator equipped with a wrist-mounted RGB-D camera. These experiments illustrate the ability of our approach to (1) provide strong bounds on failure prediction error rates (that closely match empirical error rates), and (2) improve safety by predicting failures.},
+  volume = {18},
+  selected = {true},
+  website = {}, 
+  url = {https://www.roboticsproceedings.org/rss18/p042.html},
+  arxiv = {2202.05894},
+  month = jun,
+	year = {2022},
+	isbn = {978-0-9923747-8-5},
+}
+
+@inproceedings{lepowsky_snyder_privacy-preserving_2024,
+	title = {{Privacy}-{Preserving} {Map}-{Free} {Exploration} for {Confirming} the {Absence} of a {Radioactive} {Source}},
+	author = {Lepowsky, Eric and Snyder, David and Glaser, Alexander and Majumdar, Anirudha},
+	booktitle = {2024 {IEEE}/{RSJ} {International} {Conference} on {Intelligent} {Robots} and {Systems} ({IROS} 2024)},
+	preview = {}, 
+  bibtex_show = {true},
+	abstract = {Performing an inspection task while maintaining the privacy of the inspected site is a challenging balancing act. In this work, we are motivated by the future of nuclear arms control verification, which requires both a high level of privacy and guaranteed correctness. For scenarios with limitations on sensors and stored information due to the potentially secret nature of observable features, we propose a robotic verification procedure that provides map-free exploration to perform a source verification task without requiring, nor revealing, any task-irrelevant, site-specific information. We provide theoretical guarantees on the privacy and correctness of our approach, validated by extensive simulated and hardware experiments.},
+	selected = {true},
+  website = {},
+  url = {https://ieeexplore.ieee.org/document/10802428},
+  arxiv = {},
+  month = oct,
+	year = {2024},
+  publisher = {IEEE},
+  pages = {10073--10080},
+  issn = {2153-0866},
+  doi = {10.1109/IROS58592.2024.10802428},
+}
+
+@inproceedings{snyder_policy_comparison_2025,
+	title = {Is Your {Imitation} {Learning} {Policy} Better than Mine? {Policy} {Comparison} with {Near}-{Optimal} {Stopping}},
+	author = {Snyder, David and Hancock, Asher James and Badithela, Apurva and Dixon, Emma and Miller, Patrick and Ambrus, Rares Andrei and Majumdar, Anirudha and Itkina, Masha and Nishimura, Haruki},
+  booktitle = {Proceedings of the {Robotics}: {Science} and {Systems} XVIII {Conference} ({RSS} 2022)},
+  preview = {},
+  bibtex_show = {true},
+  abstract = {Imitation learning has enabled robots to perform complex, long-horizon tasks in challenging dexterous manipulation settings. As new methods are developed, they must be rigorously evaluated and compared against corresponding baselines through repeated evaluation trials. However, policy comparison is fundamentally constrained by a small feasible sample size (e.g., 10 or 50) due to significant human effort and limited inference throughput of policies. This paper proposes a novel statistical framework for rigorously comparing two policies in the small sample size regime. Prior work in statistical policy comparison relies on batch testing, which requires a fixed, pre-determined number of trials and lacks flexibility in adapting the sample size to the observed evaluation data. Furthermore, extending the test with additional trials risks inducing inadvertent p-hacking, undermining statistical assurances. In contrast, our proposed statistical test is sequential, allowing researchers to decide whether or not to run more trials based on intermediate results. This adaptively tailors the number of trials to the difficulty of the underlying comparison, saving significant time and effort without sacrificing probabilistic correctness. Extensive numerical simulation and real-world robot manipulation experiments show that our test achieves near-optimal stopping, letting researchers stop evaluation and make a decision in a near-minimal number of trials. Specifically, it reduces the number of evaluation trials by up to 32% as compared to state-of-the-art baselines, while preserving the probabilistic correctness and statistical power of the comparison. Moreover, our method is strongest in the most challenging comparison instances (requiring the most evaluation trials); in a multi-task comparison scenario, we save the evaluator more than 160 simulation rollouts.},
+  volume = {21},
+  selected = {true},
+  website = {}, 
+	shorttitle = {{Policy} {Comparison} with {Near}-{Optimal} {Stopping}},
+	url = {https://roboticsproceedings.org/rss21/p077.html},
+  arxiv = {2503.10966},
+	month = jun,
+	year = {2025},
+  isbn = {979-8-9902848-1-4},
+}
+
+# NSCORE
+
+# Collaborations
+
+@article{simon2022fast,
+  title={Fast-response hot-wire flow sensors for wind and gust estimation on UAVs},
+  author={Simon, Nathaniel and Piqu{\'e}, Alexander and Snyder, David and Ikuma, Kyle and Majumdar, Anirudha and Hultmark, Marcus},
+  journal={Measurement Science and Technology},
+  volume={34},
+  number={2},
+  pages={025109},
+  url={https://arxiv.orgf/abs/2209.06643},
+  arxiv={2209.06643},
+  preview={MST.jpeg},
+  bibtex_show={true},
+  abstract={Due to limitations in available sensor technology, unmanned aerial vehicles (UAVs) lack an active sensing capability to measure turbulence, gusts, or other unsteady aerodynamic phenomena. Conventional in situ anemometry techniques fail to deliver in the harsh and dynamic multirotor environment due to form factor, resolution, or robustness requirements. To address this capability gap, a novel, fast-response sensor system to measure a wind vector in two dimensions is introduced and evaluated. This system, known as `MAST' (for MEMS Anemometry Sensing Tower), leverages advances in microelectromechanical (MEMS) hot-wire devices to produce a solid-state, lightweight, and robust flow sensor suitable for real-time wind estimation onboard a UAV. The MAST uses five pentagonally-arranged microscale hot-wires to determine the wind vector's direction and magnitude. The MAST's performance was evaluated in a wind tunnel at speeds up to 5~m/s and orientations of 0 - 360 degrees. A neural network sensor model was trained from the wind tunnel data to estimate the wind vector from sensor signals. The average error of the sensor is 0.14 m/s for speed and 1.6 degrees for direction. Furthermore, 95% of measurements are within 0.36 m/s error for speed and 5.0 degree error for direction. With a bandwidth of 570 Hz determined from square-wave testing, the MAST stands to greatly enhance UAV wind estimation capabilities and enable capturing relevant high-frequency phenomena in flow conditions.},
+  selected={true},
+  pdf={https://iopscience.iop.org/article/10.1088/1361-6501/ac9f5c/pdf},
+  year={2022}
 }
 
 @inproceedings{simon2023flowdrone,
@@ -35,51 +134,37 @@
   year={2023}
 }
 
-@article{simon2022fast,
-  title={Fast-response hot-wire flow sensors for wind and gust estimation on UAVs},
-  author={Simon, Nathaniel and Piqu{\'e}, Alexander and Snyder, David and Ikuma, Kyle and Majumdar, Anirudha and Hultmark, Marcus},
-  journal={Measurement Science and Technology},
-  volume={34},
-  number={2},
-  pages={025109},
-  url={https://arxiv.orgf/abs/2209.06643},
-  arxiv={2209.06643},
-  preview={MST.jpeg},
-  bibtex_show={true},
-  abstract={Due to limitations in available sensor technology, unmanned aerial vehicles (UAVs) lack an active sensing capability to measure turbulence, gusts, or other unsteady aerodynamic phenomena. Conventional in situ anemometry techniques fail to deliver in the harsh and dynamic multirotor environment due to form factor, resolution, or robustness requirements. To address this capability gap, a novel, fast-response sensor system to measure a wind vector in two dimensions is introduced and evaluated. This system, known as `MAST' (for MEMS Anemometry Sensing Tower), leverages advances in microelectromechanical (MEMS) hot-wire devices to produce a solid-state, lightweight, and robust flow sensor suitable for real-time wind estimation onboard a UAV. The MAST uses five pentagonally-arranged microscale hot-wires to determine the wind vector's direction and magnitude. The MAST's performance was evaluated in a wind tunnel at speeds up to 5~m/s and orientations of 0 - 360 degrees. A neural network sensor model was trained from the wind tunnel data to estimate the wind vector from sensor signals. The average error of the sensor is 0.14 m/s for speed and 1.6 degrees for direction. Furthermore, 95% of measurements are within 0.36 m/s error for speed and 5.0 degree error for direction. With a bandwidth of 570 Hz determined from square-wave testing, the MAST stands to greatly enhance UAV wind estimation capabilities and enable capturing relevant high-frequency phenomena in flow conditions.},
-  selected={true},
-  pdf={https://iopscience.iop.org/article/10.1088/1361-6501/ac9f5c/pdf},
-  year={2022}
+@misc{zha_guiding_2025,
+	title = {Guiding {Data} {Collection} via {Factored} {Scaling} {Curves}},
+	author = {Zha, Lihan and Badithela, Apurva and Zhang, Michael and Lidard, Justin and Bao, Jeremy and Zhou, Emily and Snyder, David and Ren, Allen Z. and Shah, Dhruv and Majumdar, Anirudha},
+  website = {https://factored-data-scaling.github.io/},
+  url = {http://arxiv.org/abs/2505.07728},
+	abstract = {Generalist imitation learning policies trained on large datasets show great promise for solving diverse manipulation tasks. However, to ensure generalization to different conditions, policies need to be trained with data collected across a large set of environmental factor variations (e.g., camera pose, table height, distractors) \$-\$ a prohibitively expensive undertaking, if done exhaustively. We introduce a principled method for deciding what data to collect and how much to collect for each factor by constructing factored scaling curves (FSC), which quantify how policy performance varies as data scales along individual or paired factors. These curves enable targeted data acquisition for the most influential factor combinations within a given budget. We evaluate the proposed method through extensive simulated and real-world experiments, across both training-from-scratch and fine-tuning settings, and show that it boosts success rates in real-world tasks in new environments by up to 26\% over existing data-collection strategies. We further demonstrate how factored scaling curves can effectively guide data collection using an offline metric, without requiring real-world evaluation at scale.},
+	publisher = {arXiv},
+	month = may,
+	year = {2025},
+	note = {arXiv:2505.07728 [cs]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Computer Science - Robotics},
+  doi = {10.48550/arXiv.2505.07728},
 }
 
-@inproceedings{sedky2024distributed,
-  title={{Distributed feather-inspired flow control mitigates stall and expands flight envelope.}},
-  author={Sedky, Girguis and Simon, Nathaniel and Othman, Ahmed K. and Wiswell, Hannah and Wissa, Aimy.},
-  journal={Proceedings of the National Academy of Sciences (PNAS)},
-  volume={121},
-  number={45},
-  bibtex_show={true},
-  preview={flight_test.png},
-  abstract={Multiple rows of feathers, known as the covert feathers, contour the upper and lower surfaces of bird wings. These feathers have been observed to deploy passively during high angle of attack maneuvers and are suggested to play an aerodynamic role. However, there have been limited attempts to capture their underlying flow physics or assess the function of multiple covert rows. Here, we first identify two flow control mechanisms associated with a single covert-inspired flap and their location sensitivity: a pressure dam mechanism and a previously unidentified shear layer interaction mechanism. We then investigate the additivity of these mechanisms by deploying multiple rows of flaps. We find that aerodynamic benefits conferred by the shear layer interaction are additive, whereas benefits conferred by the pressure dam effect are not. Nevertheless, both mechanisms can be exploited simultaneously to maximize aerodynamic benefits and mitigate stall. In addition to wind tunnel experiments, we implement multiple rows of covert-inspired flaps on a bird-scale remote-controlled aircraft. Flight tests reveal passive deployment trends similar to those observed in bird flight and comparable aerodynamic benefits to wind tunnel experiments. These results indicate that we can enhance aircraft controllability using covert-inspired flaps and form insights into the aerodynamic role of covert feathers in avian flight.},
-  selected={true},
-  pdf={https://www.pnas.org/doi/10.1073/pnas.2409268121},
-  video={https://www.youtube.com/watch?v=dLlJRujBWos},
-  year={2024}
+@misc{badithela_reliable_2025,
+	title = {Reliable and {Scalable} {Robot} {Policy} {Evaluation} with {Imperfect} {Simulators}},
+	author = {Badithela, Apurva and Snyder, David and Zha, Lihan and Mikhail, Joseph and O'Kelly, Matthew and Dixit, Anushri and Majumdar, Anirudha},
+  website = {},
+  url = {http://arxiv.org/abs/2510.04354},
+	abstract = {Rapid progress in imitation learning, foundation models, and large-scale datasets has led to robot manipulation policies that generalize to a wide-range of tasks and environments. However, rigorous evaluation of these policies remains a challenge. Typically in practice, robot policies are often evaluated on a small number of hardware trials without any statistical assurances. We present SureSim, a framework to augment large-scale simulation with relatively small-scale real-world testing to provide reliable inferences on the real-world performance of a policy. Our key idea is to formalize the problem of combining real and simulation evaluations as a prediction-powered inference problem, in which a small number of paired real and simulation evaluations are used to rectify bias in large-scale simulation. We then leverage non-asymptotic mean estimation algorithms to provide confidence intervals on mean policy performance. Using physics-based simulation, we evaluate both diffusion policy and multi-task fine-tuned {\textbackslash}(π\_0{\textbackslash}) on a joint distribution of objects and initial conditions, and find that our approach saves over {\textbackslash}(20-25{\textbackslash}\%{\textbackslash}) of hardware evaluation effort to achieve similar bounds on policy performance.},
+	publisher = {arXiv},
+	month = oct,
+	year = {2025},
+	note = {arXiv:2510.04354 [cs]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Robotics, Electrical Engineering and Systems Science - Systems and Control},
+  doi = {10.48550/arXiv.2510.04354},
 }
 
-@article{snyder2023online,
-  title={Online Learning for Obstacle Avoidance},
-  author={Snyder, David and Booker, Meghan and Simon, Nathaniel and Xia, Wenhan and Suo, Daniel and Hazan, Elad and Majumdar, Anirudha},
-  journal={Conference on Robot Learning (CoRL)},
-  url={https://arxiv.org/abs/2306.08776},
-  arxiv={2306.08776},
-  preview={olc_anchor.png},
-  bibtex_show={true},
-  abstract={We approach the fundamental problem of obstacle avoidance for robotic systems via the lens of online learning. In contrast to prior work that either assumes worst-case realizations of uncertainty in the environment or a stationary stochastic model of uncertainty, we propose a method that is efficient to implement and provably grants instance-optimality with respect to perturbations of trajectories generated from an open-loop planner (in the sense of minimizing worst-case regret). The resulting policy adapts online to realizations of uncertainty and provably compares well with the best obstacle avoidance policy in hindsight from a rich class of policies. The method is validated in simulation on a dynamical system environment and compared to baseline open-loop planning and robust Hamilton- Jacobi reachability techniques. Further, it is implemented on a hardware example where a quadruped robot traverses a dense obstacle field and encounters input disturbances due to time delays, model uncertainty, and dynamics nonlinearities.},
-  selected={true},
-  pdf={https://arxiv.org/pdf/2306.08776.pdf},
-  year={2023}
-}
+# CORE
+
+# Patents 
 
 @article{simon2024omnidirectional,
   title={Omnidirectional flow sensor (US Patent App. 18/367,015)},
@@ -93,3 +178,5 @@
   abstract={Disclosed is a fast-response sensor system to measure a fluid vector in a plurality of dimensions. This system, known as ‘MAST’ (for MEMS Anemometry Sensing Tower), utilizes microelectromechanical (MEMS) hot-wire devices to produce a solid-state, lightweight, and robust flow sensor system suitable for, e.g., real-time wind estimation onboard a UAV. The MAST uses three through eighteen polygonally-arranged microscale flow sensors to determine the fluid's vector's direction and magnitude.},
   patents={true},
 }
+
+# TODO: add other patent here
