@@ -100,27 +100,29 @@ category: work
         </td>
     </tr>
 </table> -->
+
 <br>
 <div style="text-align: center; font-size: 20px; width: 60%; max-width: 800px; margin: 0 auto;">
     <b>Warning:</b> This page remains in development. Stay tuned for a more complete version in the coming weeks! In the meantime, the TRI-hosted project page can be found <a href="https://tri-ml.github.io/step/" target="_blank">here</a>.
 </div>
 <br>
-<div class="row mt-3">
+
+<!-- <div class="row mt-3">
     <div class="col-sm col-12 mt-3 mt-md-0 d-flex justify-content-center">
         {% include video.html path="assets/video/Flow.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true loop=true%}
     </div>
 </div>
 <div class="caption" style="font-size: 18px;">
     Slow motion video of LaDrone hovering in a flow (left to right), with tracer particles illuminated by a time-resolved laser. Image credit: Girguis Sedky.
-<br>
+<br> -->
 
-<div style="font-size: 20px; width: 100%; max-width: 800px; margin: 0 auto; text-align:justify">
+<!-- <div style="font-size: 20px; width: 100%; max-width: 800px; margin: 0 auto; text-align:justify">
 <p style="margin-top: 4px;"></p>
 <b style="font-size: 22px;">Abstract:</b> Scientists are interested in the movement of particles in our atmosphere, for applications such as measuring and modeling pollutant dispersion. Conventional particle velocimetry techniques are restricted to measurement volumes on the centimeter scale; recent tracking algorithm and tracer particle advances increase domain sizes into the meter range, but to reach hundreds or thousands of meters alternative methods are required. The authors propose LaDrone, a particle velocimetry technique based on a 40 gram Micro Aerial Vehicle (MAV). Tasked only to compensate for gravity, LaDrones move freely due to the wind force in three dimensions. They can be tracked at centimeter-level precision using RTK GPS, collecting atmospheric boundary layer data as they are swept by the wind. Such data could be used to analyze the atmosphere at the kilometer scale. 
 </div>
-<br>
+<br> -->
 
-<div style="font-size: 20px; width: 100%; max-width: 800px; margin: 0 auto; text-align:justify">
+<!-- <div style="font-size: 20px; width: 100%; max-width: 800px; margin: 0 auto; text-align:justify">
 <p style="margin-top: 4px;"></p>
 <b style="font-size: 22px;">Core Aspects of LaDrone:</b>
 <ol>
@@ -132,9 +134,9 @@ category: work
   Conventional GNSS tracking is not very accurate due to <a href="https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System">numerous sources of error</a>. However, correction signals can reduce this error from 2-10 m to sub-centimeter precision! Since our position is not needed real-time, we use a post-processing kinematic (PPK) approach (<a href="https://rtklibexplorer.wordpress.com/2019/08/24/dual-frequency-ppk-solutions-with-rtklib-and-the-u-blox-f9p/">example</a>).
 </ol>
 </div>
-<br>
+<br> -->
 
-<div style="text-align: center; max-width: 800px; margin: 0 auto;">
+<!-- <div style="text-align: center; max-width: 800px; margin: 0 auto;">
     <p style="margin-top: 4px;"></p>
     <a href="../../assets/img/LaDrone_Outside.jpeg">
         <img src="../../assets/img/LaDrone_Outside.jpeg" alt="LaDrone System" style="width: 80%;">
@@ -142,9 +144,9 @@ category: work
 </div>
 <div class="caption" style="text-align: center; font-size: 18px; width: 80%;  margin: 0 auto;">
     LaDrone consists of entirely off-the-shelf components: a <a href="https://www.bitcraze.io/products/crazyflie-2-1/">Crazyflie 2.1</a> micro aerial vehicle, a <a href="https://www.sparkfun.com/products/15136">ZED-F9P</a> RTK GPS board + antenna, and a <a href="https://www.sparkfun.com/products/13712">data logger</a>.
-</div>
+</div> -->
 
-<div style="font-size: 20px; width: 100%; max-width: 800px; margin: 0 auto; text-align:left">
+<!-- <div style="font-size: 20px; width: 100%; max-width: 800px; margin: 0 auto; text-align:left">
 <p style="margin-top: 4px;"></p>
 <b style="font-size: 22px;">Ongoing work:</b>
 <ol>
@@ -154,10 +156,10 @@ category: work
 
   <li>Evaluate in windy, outdoor environments.</li>
 </ol>
-</div>
+</div> -->
 
-<div style="font-size: 18px; width: 100%; max-width: 800px; margin: 0 auto; text-align:justify">
+<!-- <div style="font-size: 18px; width: 100%; max-width: 800px; margin: 0 auto; text-align:justify">
 <p style="margin-top: 4px;"></p>
 <b style="font-size: 20px;">The story behind the name:</b> In fluid dynamics, the study of a single fluid parcel or particle along its trajectory is known as the <i>Lagrangian</i> specification. Since we aspire to use a drone to track the movement of an individual fluid parcel, we call our "Lagrangian" vehicle: LaDrone!
 </div>
-<br>
+<br> -->
