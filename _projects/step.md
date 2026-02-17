@@ -61,15 +61,12 @@ category: work
         </a></span></center>
     </td>
     <td align=center width=40px><center><span style="font-size:28px">
-        <a href="https://www.tri.global/" target="_blank"><img src="../assets/img/TRI_logo.png" alt="Toyota Research Institute" style="width: 30%;"></a></span></center>
+        <a href="https://www.tri.global/" target="_blank"><img src="../assets/img/TRI_logo.png" alt="Toyota Research Institute" style="width: 40%;"></a></span></center>
     </td>
     </tr>
 </table>
 <table style="width: 80%; max-width: 800px; margin: 0 auto;">
     <tr>
-        <td style="text-align: center; width: 100px;">
-            <span style="font-size: 22px; font-weight:bold;"><a href="https://harukins.github.io/" target="_blank">Haruki Nishimura</a></span>
-        </td>
         <td style="text-align: center; width: 100px;">
             <span style="font-size: 22px; font-weight:bold;"><a href="https://mae.princeton.edu/" target="_blank">Princeton University</a></span>
         </td>
