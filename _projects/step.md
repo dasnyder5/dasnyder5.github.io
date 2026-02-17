@@ -53,7 +53,7 @@ category: work
         </td>
     </tr>
 </table>
-<table style="width: 60%; max-width: 800px; margin: 0 auto;">
+<table style="width: 80%; max-width: 800px; margin: 0 auto;">
     <tr>
     <td align=center width=40px><center><span style="font-size:28px">
         <a href="https://irom-lab.princeton.edu/">
@@ -65,8 +65,18 @@ category: work
     </td>
     </tr>
 </table>
-<center><span style="font-size:30px"><a href="https://mae.princeton.edu/" target="_blank">Princeton University</a></span></center>
+<table style="width: 80%; max-width: 800px; margin: 0 auto;">
+    <tr>
+        <td style="text-align: center; width: 100px;">
+            <span style="font-size: 22px; font-weight:bold;"><a href="https://mae.princeton.edu/" target="_blank">Princeton University</a></span>
+        </td>
+        <td style="text-align: center; width: 100px;">
+            <span style="font-size: 22px; font-weight:bold;"><a href="https://www.tri.global/" target="_blank">Toyota Research Institute/a></span>
+        </td>
+    </tr>
+</table>
 <br>
+<!-- <center><span style="font-size:30px"><a href="https://mae.princeton.edu/" target="_blank">Princeton University</a></span></center> -->
 <!-- <table style="width: 80%; max-width: 800px; margin: 0 auto;">
     <tr>
         <td style="text-align: center; width: 50%;">
