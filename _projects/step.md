@@ -36,7 +36,7 @@ category: work
         </td>
         <td style="text-align: center; width: 100px;">
             <span style="font-size: 22px; font-weight:bold;"><a href="https://raresambrus.com/" 
-            target="_blank">Rares Andrei Ambrus</a></span>
+            target="_blank">Rares Ambrus</a></span>
         </td>
     </tr>
 </table>
@@ -68,10 +68,13 @@ category: work
 <table style="width: 80%; max-width: 800px; margin: 0 auto;">
     <tr>
         <td style="text-align: center; width: 100px;">
+            <span style="font-size: 22px; font-weight:bold;"><a href="https://harukins.github.io/" target="_blank">Haruki Nishimura</a></span>
+        </td>
+        <td style="text-align: center; width: 100px;">
             <span style="font-size: 22px; font-weight:bold;"><a href="https://mae.princeton.edu/" target="_blank">Princeton University</a></span>
         </td>
         <td style="text-align: center; width: 100px;">
-            <span style="font-size: 22px; font-weight:bold;"><a href="https://www.tri.global/" target="_blank">Toyota Research Institute/a></span>
+            <span style="font-size: 22px; font-weight:bold;"><a href="https://www.tri.global/" target="_blank">Toyota Research Institute</a></span>
         </td>
     </tr>
 </table>
