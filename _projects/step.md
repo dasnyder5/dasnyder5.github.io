@@ -102,7 +102,7 @@ category: work
 </table> -->
 <br>
 <div style="text-align: center; font-size: 20px; width: 60%; max-width: 800px; margin: 0 auto;">
-    <b>Warning:</b> This is ongoing work. Stay tuned for more details and comprehensive evaluation!
+    <b>Warning:</b> This page remains in development. Stay tuned for a more complete version in the coming weeks! In the meantime, the TRI-hosted project page can be found <a href="https://tri-ml.github.io/step/" target="_blank">here</a>.
 </div>
 <br>
 <div class="row mt-3">
