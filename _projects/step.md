@@ -17,23 +17,43 @@ category: work
         </td>
         <td style="text-align: center; width: 100px;">
             <span style="font-size: 22px; font-weight:bold;"><a href="https://aasherh.github.io/" 
-            target="_blank">Asher Hancock</a></span>
+            target="_blank">Asher J. Hancock</a></span>
         </td>
-    </tr>
-</table>
-<table style="width: 60%; max-width: 800px; margin: 0 auto;">
-    <tr>
-            <td style="text-align: center; width: 100px;">
+        <td style="text-align: center; width: 100px;">
             <span style="font-size: 22px; font-weight:bold;"><a href="https://abadithela.github.io/" target="_blank">Apurva Badithela</a></span>
         </td>
     </tr>
 </table>
-<table style="width: 60%; max-width: 800px; margin: 0 auto;">
+<table style="width: 80%; max-width: 800px; margin: 0 auto;">
+    <tr>
+        <td style="text-align: center; width: 100px;">
+            <span style="font-size: 22px; font-weight:bold;"><a href="" 
+            target="_blank">Emma Dixon</a></span>
+        </td>
+        <td style="text-align: center; width: 100px;">
+            <span style="font-size: 22px; font-weight:bold;"><a href="" 
+            target="_blank">Patrick Miller</a></span>
+        </td>
+        <td style="text-align: center; width: 100px;">
+            <span style="font-size: 22px; font-weight:bold;"><a href="https://raresambrus.com/" 
+            target="_blank">Rares Andrei Ambrus</a></span>
+        </td>
+    </tr>
+</table>
+<table style="width: 80%; max-width: 800px; margin: 0 auto;">
     <tr>
         <td style="text-align: center; width: 100px;">
             <span style="font-size: 22px; font-weight:bold;"><a href="https://irom-lab.princeton.edu/majumdar/" target="_blank">Anirudha Majumdar</a></span>
         </td>
+        <td style="text-align: center; width: 100px;">
+            <span style="font-size: 22px; font-weight:bold;"><a href="https://mashaitkina.weebly.com/" target="_blank">Masha Itkina</a></span>
+        </td>
+        <td style="text-align: center; width: 100px;">
+            <span style="font-size: 22px; font-weight:bold;"><a href="https://harukins.github.io/" target="_blank">Haruki Nishimura</a></span>
+        </td>
     </tr>
+</table>
+<table style="width: 60%; max-width: 800px; margin: 0 auto;">
     <tr>
     <td align=center width=40px><center><span style="font-size:28px">
         <a href="https://irom-lab.princeton.edu/">
@@ -41,13 +61,13 @@ category: work
         </a></span></center>
     </td>
     <td align=center width=40px><center><span style="font-size:28px">
-        <a href="https://www.tri.global/" target="_blank"><img src="../assets/img/TRI_logo.jpg" alt="Toyota Research Institute" style="width: 30%;"></a></span></center>
+        <a href="https://www.tri.global/" target="_blank"><img src="../assets/img/TRI_logo.png" alt="Toyota Research Institute" style="width: 30%;"></a></span></center>
     </td>
     </tr>
 </table>
 <center><span style="font-size:30px"><a href="https://mae.princeton.edu/" target="_blank">Princeton University</a></span></center>
 <br>
-<table style="width: 80%; max-width: 800px; margin: 0 auto;">
+<!-- <table style="width: 80%; max-width: 800px; margin: 0 auto;">
     <tr>
         <td style="text-align: center; width: 50%;">
             <a href="https://thenounproject.com/icon/binoculars-5031330/" target="_blank"><img src="../assets/img/mononav/noun-binoculars-5031330.png" alt="Image Description" style="max-width: 50px; height: auto;"></a>
@@ -69,7 +89,7 @@ category: work
             </p>
         </td>
     </tr>
-</table>
+</table> -->
 <br>
 <div style="text-align: center; font-size: 20px; width: 60%; max-width: 800px; margin: 0 auto;">
     <b>Warning:</b> This is ongoing work. Stay tuned for more details and comprehensive evaluation!
