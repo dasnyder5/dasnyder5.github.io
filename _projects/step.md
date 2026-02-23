@@ -112,8 +112,9 @@ category: work
     <div class="col-sm col-12 mt-3 mt-md-0 d-flex justify-content-center">
         {% include video.html path="assets/video/Flow.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true loop=true%}
     </div>
-</div>
-<div class="caption" style="font-size: 18px;">
+</div> -->
+
+<!-- <div class="caption" style="font-size: 18px;">
     Slow motion video of LaDrone hovering in a flow (left to right), with tracer particles illuminated by a time-resolved laser. Image credit: Girguis Sedky.
 <br> -->
 
