@@ -38,7 +38,7 @@ layout: default
                 width: 1.75rem;                 /* Ensures uniform spacing for double digits like [10] */
             }
         </style>
-        <div class="working-publications">
+        <div class="publications">
             <h2 id="working-publications">Working Publications</h2>
             {% bibliography -f papers -q @*[is_working=true]* --sort_by working_order_number --order descending %}
         </div>
