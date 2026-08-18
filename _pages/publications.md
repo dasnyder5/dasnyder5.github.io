@@ -50,7 +50,7 @@ papers: true
 <ol id="bibtex_display"></ol>
 
 <!-- 5. DATA SOURCE: Tells the script to fetch your file and reverse-sort it -->
-<bibtex src="references.bib" sort="year" order="desc"></bibtex>
+<bibtex src="../_bibliography/papers.bib" sort="year" order="desc"></bibtex>
 
 <!-- 6. AUTOMATION: Calculates the total dynamic entries to set your starting number -->
 <script>
