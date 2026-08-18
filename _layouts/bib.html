@@ -27,6 +27,22 @@
         {% if entry.type == "thesis" -%}
           {{reference}}
         {%- else %}
+          <!-- ======================================================= -->
+          <!-- DYNAMIC BRACKET LOGIC: Swaps IDs based on Page Context  -->
+          <!-- ======================================================= -->
+          {% if page.bib_context == "first" %}
+            {% if entry.is_working == "true" and entry.usera %}
+              <span class="bib-custom-number" style="font-weight: bold; font-family: monospace; margin-right: 8px;">[{{ entry.usera }}]</span>
+            {% endif %}
+          {% elsif page.bib_context == "second" %}
+            {% if entry.is_conference == "true" and entry.userb %}
+              <span class="bib-custom-number" style="font-weight: bold; font-family: monospace; margin-right: 8px;">[{{ entry.userb }}]</span>
+            {% endif %}
+          {% elsif page.bib_context == "third" %}
+            {% if entry.is_journal == "true" and entry.userc %}
+              <span class="bib-custom-number" style="font-weight: bold; font-family: monospace; margin-right: 8px;">[{{ entry.userc }}]</span>
+            {% endif %}
+          {% endif %}
           <!-- Title -->
           <div class="title">{{entry.title}}</div>
           <!-- Author -->
