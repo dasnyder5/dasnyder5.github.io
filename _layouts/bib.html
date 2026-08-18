@@ -1,5 +1,19 @@
 ---
 ---
+<!-- 1. PASTE THE LOGIC HERE (Right after the front matter header) -->
+{% if current_group == "working" %}
+  {% if working_counter %}{% assign working_counter = working_counter | plus: 1 %}{% else %}{% assign working_counter = 1 %}{% endif %}
+  {% assign display_num = working_counter %}
+{% elsif current_group == "conference" %}
+  {% if conference_counter %}{% assign conference_counter = conference_counter | plus: 1 %}{% else %}{% assign conference_counter = 1 %}{% endif %}
+  {% assign display_num = conference_counter %}
+{% elsif current_group == "journal" %}
+  {% if journal_counter %}{% assign journal_counter = journal_counter | plus: 1 %}{% else %}{% assign journal_counter = 1 %}{% endif %}
+  {% assign display_num = journal_counter %}
+{% else %}
+  {% assign display_num = nil %}
+{% endif %}
+
 <!-- _layouts/bib.html -->
       <div class="row">
         <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
@@ -29,7 +43,10 @@
         {%- else %}
           <!-- Title -->
           <div class="title">
-            {{ entry.title }}
+            {% if display_num %}
+              <span class="bib-num">[{{ display_num }}]</span> 
+            {% endif %}
+            {{entry.title}}
           </div>
           <!-- Author -->
           <div class="author">

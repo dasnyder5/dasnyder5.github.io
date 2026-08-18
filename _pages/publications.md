@@ -6,8 +6,18 @@ nav: true
 nav_order: 2
 ---
 
-{%- include working_papers.html %}
+<div class="publications">
 
-{%- include refereed_conference_papers.html %}
+  <h2>Working Papers</h2>
+  {% assign current_group = "working" %}
+  {% bibliography -f papers -q @*[is_working=true]* %}
 
-{%- include journal_papers.html %}
+  <h2>Refereed Conference Papers</h2>
+  {% assign current_group = "conference" %}
+  {% bibliography -f papers -q @*[is_conference=true]* %}
+
+  <h2>Journal Papers</h2>
+  {% assign current_group = "journal" %}
+  {% bibliography -f papers -q @*[is_journal=true]* %}
+
+</div>
