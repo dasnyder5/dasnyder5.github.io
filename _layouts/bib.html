@@ -30,11 +30,11 @@
           <!-- ======================================================= -->
           <!-- DYNAMIC BRACKET LOGIC: Swaps IDs based on Page Context  -->
           <!-- ======================================================= -->
-          {% if page.bib_context == "first" %}
+          {% if current_context == "first" %}
             <span class="bib-custom-number" style="font-weight: bold; font-family: monospace; margin-right: 8px;">[{{ entry.usera }}]</span>
-          {% elsif page.bib_context == "second" %}
+          {% elsif current_context == "second" %}
             <span class="bib-custom-number" style="font-weight: bold; font-family: monospace; margin-right: 8px;">[{{ entry.userb }}]</span>
-          {% elsif page.bib_context == "third" %}
+          {% elsif current_context == "third" %}
             <span class="bib-custom-number" style="font-weight: bold; font-family: monospace; margin-right: 8px;">[{{ entry.userc }}]</span>
           {% endif %}
           <!-- Title -->
