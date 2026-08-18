@@ -1,4 +1,4 @@
 <div class="publications">
   <h2 id="refereed-conference-publications">Refereed Conference Publications</h2>
-  {% bibliography -f papers -q @*[is_conference=true]* --sort conference_order_number --reverse %}
+  {% bibliography -f papers --sort conference_order_number --reverse -q @*[is_conference=true]* %}
 </div>
