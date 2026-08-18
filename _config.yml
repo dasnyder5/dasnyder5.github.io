@@ -230,10 +230,10 @@ display_tags: ['formatting', 'images', 'links', 'math', 'code'] # this tags will
 
 scholar:
 
-  last_name: [Snyder]
-  first_name: [David]
+  last_name: [Snyder, Snyder<sup>*</sup>]
+  first_name: [D., David]
 
-  style: apa
+  style: ieee
   locale: en
 
   source: /_bibliography/
