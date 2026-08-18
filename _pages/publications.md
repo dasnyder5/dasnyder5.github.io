@@ -35,14 +35,14 @@ permalink: /publications/
 </style>
 
 <!-- 2. YOUR CONTENT AND BIBLIOGRAPHY LISTS -->
-<h3>Working Group Papers</h3>
-<div class="custom-bib-group" data-sort-attr="usera" data-sort-order="asc">
-  {% bibliography -q @*[working=true]* --extra usera %}
+<h3>Working Papers</h3>
+<div class="custom-bib-group" data-sort-attr="usera" data-sort-order="desc">
+  {% bibliography -q @*[is_working=true]* --extra usera %}
 </div>
 
-<h3>Archived Projects</h3>
+<h3>Conference Papers</h3>
 <div class="custom-bib-group" data-sort-attr="userb" data-sort-order="desc">
-  {% bibliography -q @*[working=false]* --extra userb %}
+  {% bibliography -q @*[is_conference=true]* --extra userb %}
 </div>
 
 <!-- 3. PLACE THE CONTROLLER SCRIPT AT THE ABSOLUTE BOTTOM OF THE FILE -->
