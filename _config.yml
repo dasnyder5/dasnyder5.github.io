@@ -171,6 +171,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - ['_pages/page_assets/full_publications.bib']
 keep_files:
   - CNAME
   - .nojekyll
