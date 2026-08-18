@@ -6,6 +6,13 @@ nav: true
 nav_order: 2
 ---
 
+---
+layout: page
+title: Publications
+permalink: /publications/
+---
+
+<!-- 1. PLACE THE STYLE BLOCK HERE AT THE VERY TOP OF THE PAGE BODY -->
 <style>
   /* Strip default bullet points and numbers from al-folio */
   .custom-bib-group ol.bibliography li, 
@@ -27,25 +34,22 @@ nav_order: 2
   }
 </style>
 
-<!-- === LIST 1: Sorted by usera === -->
+<!-- 2. YOUR CONTENT AND BIBLIOGRAPHY LISTS -->
 <h3>Working Group Papers</h3>
-<div class="custom-bib-group" data-sort-attr="usera" data-sort-order="desc">
-  {% bibliography -q @*[is_working=true]* --extra usera %}
+<div class="custom-bib-group" data-sort-attr="usera" data-sort-order="asc">
+  {% bibliography -q @*[working=true]* --extra usera %}
 </div>
 
-<!-- === LIST 2: Sorted by userb === -->
-<h3>Refereed Conference Papers</h3>
+<h3>Archived Projects</h3>
 <div class="custom-bib-group" data-sort-attr="userb" data-sort-order="desc">
-  {% bibliography -q @*[is_conference=true]* --extra userb %}
+  {% bibliography -q @*[working=false]* --extra userb %}
 </div>
 
-<!-- ======================================================= -->
-<!-- THE UPDATED MASTER CONTROLLER SCRIPT                    -->
-<!-- ======================================================= -->
+<!-- 3. PLACE THE CONTROLLER SCRIPT AT THE ABSOLUTE BOTTOM OF THE FILE -->
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll('.custom-bib-group').forEach(group => {
-      const attrName = group.getAttribute('data-sort-attr');   // Will evaluate to "usera" or "userb"
+      const attrName = group.getAttribute('data-sort-attr');   
       const sortOrder = group.getAttribute('data-sort-order'); 
       
       const listParent = group.querySelector('ol.bibliography, ul.bibliography');
@@ -54,18 +58,15 @@ nav_order: 2
       const items = Array.from(listParent.querySelectorAll('li'));
 
       items.sort((a, b) => {
-        // We find the class name that begins with "usera-" or "userb-"
         const classA = Array.from(a.classList).find(c => c.startsWith(attrName + '-'));
         const classB = Array.from(b.classList).find(c => c.startsWith(attrName + '-'));
 
-        // Extract everything after the hyphen ("usera-05" turns into 5)
         let valA = classA ? parseInt(classA.substring(attrName.length + 1)) : 0;
         let valB = classB ? parseInt(classB.substring(attrName.length + 1)) : 0;
 
         return sortOrder === 'desc' ? (valB - valA) : (valA - valB);
       });
 
-      // Clear layout and append newly sorted items with dynamic [#] prefixes
       items.forEach((item, index) => {
         listParent.appendChild(item);
 
