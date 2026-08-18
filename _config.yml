@@ -233,7 +233,7 @@ scholar:
   last_name: [Snyder]
   first_name: [David]
 
-  style: apa
+  style: ieee
   locale: en
 
   source: /_bibliography/
