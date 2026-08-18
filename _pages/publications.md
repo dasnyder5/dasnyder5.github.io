@@ -6,34 +6,6 @@ nav: true
 nav_order: 2
 ---
 
----
-layout: page
-title: Publications
-permalink: /publications/
----
-
-<!-- 1. PLACE THE STYLE BLOCK HERE AT THE VERY TOP OF THE PAGE BODY -->
-<style>
-  /* Strip default bullet points and numbers from al-folio */
-  .custom-bib-group ol.bibliography li, 
-  .custom-bib-group ul.bibliography li {
-    list-style: none !important; 
-    position: relative;
-    padding-left: 2.2rem;        /* Makes room for the bracket prefix */
-    text-indent: -2.2rem;       /* Aligns multi-line citations beautifully */
-    margin-bottom: 1.25rem;
-  }
-
-  /* Style the bracket numbering text columns uniformly */
-  .custom-bib-group .bib-bracket {
-    font-weight: bold;
-    font-family: monospace;      /* Forces equal spacing for double digits like [10] */
-    display: inline-block;
-    width: 2.2rem;               /* Prevents citation text from shifting left/right */
-    text-indent: 0;              /* Clears hanging indent logic for the brackets */
-  }
-</style>
-
 <!-- 2. YOUR CONTENT AND BIBLIOGRAPHY LISTS -->
 <h3>Working Papers</h3>
 <div class="custom-bib-group" data-sort-attr="usera" data-sort-order="desc">
