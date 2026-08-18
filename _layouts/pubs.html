@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+{% assign page.bib_context = "first" %}
+{%- include working_papers.html %}
+
+{% assign page.bib_context = "second" %}
+{%- include refereed_conference_papers.html %}
+
+{% assign page.bib_context = "third" %}
+{%- include journal_papers.html %}
+
+{% assign page.bib_context = nil %}
