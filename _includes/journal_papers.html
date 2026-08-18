@@ -1,4 +1,5 @@
 <div class="publications">
   <h2 id="journal-publications">Journal Publications</h2>
+  {% assign page.bib_context = "third" %}
   {% bibliography -f papers -q @*[is_journal=true]* %}
 </div>
