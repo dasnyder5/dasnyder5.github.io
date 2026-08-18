@@ -1,15 +1,12 @@
 ---
 ---
 <!-- 1. PASTE THE LOGIC HERE (Right after the front matter header) -->
-{% if current_group == "working" %}
-  {% if working_counter %}{% assign working_counter = working_counter | plus: 1 %}{% else %}{% assign working_counter = 1 %}{% endif %}
-  {% assign display_num = working_counter %}
-{% elsif current_group == "conference" %}
-  {% if conference_counter %}{% assign conference_counter = conference_counter | plus: 1 %}{% else %}{% assign conference_counter = 1 %}{% endif %}
-  {% assign display_num = conference_counter %}
-{% elsif current_group == "journal" %}
-  {% if journal_counter %}{% assign journal_counter = journal_counter | plus: 1 %}{% else %}{% assign journal_counter = 1 %}{% endif %}
-  {% assign display_num = journal_counter %}
+{% if entry.group_class == "working" %}
+  {% assign display_num = entry.usera %}
+{% elsif entry.group_class == "conference" %}
+  {% assign display_num = entry.userb %}
+{% elsif entry.group_class == "journal" %}
+  {% assign display_num = entry.userc %}
 {% else %}
   {% assign display_num = nil %}
 {% endif %}
