@@ -4,15 +4,21 @@ permalink: /publications/
 title: Publications
 nav: true
 nav_order: 2
+first_context: true
+second_context: false
+third_context: false
 ---
 
-{% assign current_context = "first" %}
 {%- include working_papers.html %}
 
-{% assign current_context = "second" %}
+{% assign first_context = false %}
+{% assign second_context = true %}
+
 {%- include refereed_conference_papers.html %}
 
-{% assign current_context = "third" %}
+{% assign second_context = false %}
+{% assign third_context = true %}
+
 {%- include journal_papers.html %}
 
-{% assign current_context = nil %}
+{% assign third_context = false %}
