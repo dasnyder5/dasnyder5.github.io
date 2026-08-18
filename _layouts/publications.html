@@ -12,36 +12,8 @@ layout: default
     </header>
 
     <article>
-        <!-- Working papers
-        {%- include working_papers.html %} -->
-        <!-- 1. Place your style block first -->
-        <style>
-            /* Target ONLY the ordered list inside your custom bibliography wrapper */
-            .my-bib-container ol.bibliography {
-                list-style: none;             /* Disables default browser numbering (1.) */
-                counter-reset: bib-counter;    /* Starts our custom bracket counter */
-                padding-left: 2rem;
-            }
-
-            .my-bib-container ol.bibliography li {
-                counter-increment: bib-counter; /* Increments by 1 for each bibitem */
-                margin-bottom: 0.75rem;
-                text-indent: -1.75rem;          /* Pulls the bracket left to align wrapped lines */
-                padding-left: 1.75rem;          /* Creates space for the bracket prefix */
-            }
-
-            /* Dynamically injects the [#] prefix */
-            .my-bib-container ol.bibliography li::before {
-                content: "[" counter(bib-counter) "] ";
-                font-weight: bold;
-                display: inline-block;
-                width: 1.75rem;                 /* Ensures uniform spacing for double digits like [10] */
-            }
-        </style>
-        <div class="publications">
-            <h2 id="working-publications">Working Publications</h2>
-            {% bibliography -f papers -q @*[is_working=true]* --sort_by working_order_number --order descending %}
-        </div>
+        <!-- Working papers -->
+        {%- include working_papers.html %}
         <!-- Refereed Conference papers
         {%- include refereed_conference_papers.html %} -->
         <!-- Journal papers
