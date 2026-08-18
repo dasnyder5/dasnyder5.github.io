@@ -1,5 +1,5 @@
 ---
-layout: pubs
+layout: page
 permalink: /publications/
 title: Publications
 nav: true
