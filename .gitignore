@@ -7,6 +7,10 @@ _projects_dep
 .DS_store
 .ruby-version
 .tweet-cache
+*_old/
+_old*/
+_includes/*old.html
+.gitignore
 Gemfile.lock
 vendor
 
