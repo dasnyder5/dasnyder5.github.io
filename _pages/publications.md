@@ -8,24 +8,24 @@ nav_order: 2
 horizontal: false
 papers: true
 ---
-<!-- 1. DEPENDENCIES: Only keep these if your platform doesn't already load jQuery -->
 <script src="https://jquery.com"></script>
 <script src="https://jsdelivr.net"></script>
 
-<!-- 2. STYLING: Scoped CSS rules for the bracketed countdown layout -->
+<!-- 2. STYLING: No more reverse-counting hacks needed -->
 <style>
+    /* Turn off standard list styles to use brackets */
     #bibtex_display {
         list-style: none;
         padding-left: 0;
     }
     #bibtex_display li {
-        counter-increment: bib-counter -1; 
         margin-bottom: 12px;
         position: relative;
         padding-left: 2.5em;
     }
+    /* Grabs the order number directly from the bibtex template layout below */
     #bibtex_display li::before {
-        content: "[" counter(bib-counter) "] ";
+        content: "[" attr(data-order) "] ";
         position: absolute;
         left: 0;
         top: 0;
@@ -33,10 +33,11 @@ papers: true
     }
 </style>
 
-<!-- 3. TEMPLATE: Tells bibtex-js how to format the text inside each entry -->
+<!-- 3. TEMPLATE: Map the custom bibtex field to an HTML 'data-' attribute -->
 <div id="bibtex_structure" style="display:none;">
     <div class="sections">
-        <div class="info">
+        <!-- The library will inject your custom number into 'data-order' -->
+        <div class="info" data-order="order_number">
             <span class="author"></span>. 
             <span class="title" style="font-weight: bold;"></span>. 
             <span class="journal" style="font-style: italic;"></span> 
@@ -45,19 +46,9 @@ papers: true
     </div>
 </div>
 
-<!-- 4. CONTAINERS: Where the template outputs your compiled entries -->
+<!-- 4. CONTAINERS -->
 <ol id="bibtex_errors"></ol>
 <ol id="bibtex_display"></ol>
 
-<!-- 5. DATA SOURCE: Tells the script to fetch your file and reverse-sort it -->
-<bibtex src="../_bibliography/papers.bib" sort="year" order="desc"></bibtex>
-
-<!-- 6. AUTOMATION: Calculates the total dynamic entries to set your starting number -->
-<script>
-    $(window).on('load', function() {
-        setTimeout(function() {
-            var totalItems = $('#bibtex_display li').length;
-            $('#bibtex_display').css('counter-reset', 'bib-counter ' + (totalItems + 1));
-        }, 500); 
-    });
-</script>
+<!-- 5. DATA SOURCE: Tell it to sort by your custom field in descending order -->
+<bibtex src="page_assets/full_publications.bib" sort="order_number" order="desc"></bibtex>
