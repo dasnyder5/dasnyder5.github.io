@@ -18,7 +18,7 @@ Formulation and solution of equations governing the dynamic behavior of engineer
 
 ### University of Maryland, College Park
 **ENAE 432 -- [Control of Aerospace Systems](https://aero.umd.edu/course-schedule/course/ENAE432): Spring 2018**  
-_[Professor Robert Sanner](https://aero.umd.edu/clark/faculty/63/Robert-M-Sanner)_ 
+_[Professor Robert Sanner](https://aero.umd.edu/clark/faculty/63/Robert-M-Sanner)_  
 An introduction to the feedback control of dynamic systems.
 Laplace transforms and transfer function techniques; frequency
 response and Bode diagrams. Stability analysis via root locus and
