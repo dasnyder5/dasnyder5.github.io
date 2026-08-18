@@ -1,4 +1,4 @@
 <div class="publications">
   <h2 id="journal-publications">Journal Publications</h2>
-  {% bibliography -f papers --sort journal_order_number --reverse -q @*[is_journal=true]* %}
+  {% bibliography -f papers -q @*[is_journal=true]* --sort_by journal_order_number --order descending %}
 </div>
