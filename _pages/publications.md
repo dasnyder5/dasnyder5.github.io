@@ -4,9 +4,6 @@ permalink: /publications/
 title: Publications
 nav: true
 nav_order: 2
-first_context: true
-second_context: false
-third_context: false
 ---
 
 {%- include working_papers.html %}

@@ -29,28 +29,6 @@
         {%- else %}
           <!-- Title -->
           <div class="title">
-            {%- if entry.group_class -%}
-              <!-- 1. Capture all publications from the shared site context -->
-              {%- assign all_pubs = site.publications | default: site.data.publications -%}
-              
-              <!-- 2. Filter down to only the entries that match this specific item's group_class -->
-              {%- assign filtered_group = all_pubs | where: "group_class", entry.group_class -%}
-              
-              <!-- 3. Track position dynamically by finding this item's index in the filtered group -->
-              {%- assign current_index = 0 -%}
-              {%- for pub in filtered_group -%}
-                {%- if pub.key == entry.key -%}
-                  {%- assign current_index = forloop.index -%}
-                {%- endif -%}
-              {%- endfor -%}
-              
-              <!-- 4. Calculate the reverse number (Total Items - Current Index + 1) -->
-              {%- assign total_items = filtered_group.size -%}
-              {%- assign reverse_number = total_items | minus: current_index | plus: 1 -%}
-              
-              <!-- 5. Output the bracketed reverse number inside the title block -->
-              [{{ reverse_number }}] 
-            {%- endif -%}
             {{ entry.title }}
           </div>
           <!-- Author -->
