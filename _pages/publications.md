@@ -20,14 +20,17 @@ nav_order: 2
 
 <h3>Journal Papers</h3>
 
-{% assign page.bib_context = "second" %}
+{% assign page.bib_context = "third" %}
 {% bibliography -q @*[is_journal=true]* %}
 -->
 
+{% assign page.bib_context = "first" %}
 {%- include working_papers.html %}
 
+{% assign page.bib_context = "second" %}
 {%- include refereed_conference_papers.html %}
 
+{% assign page.bib_context = "third" %}
 {%- include journal_papers.html %}
 
 {% assign page.bib_context = nil %}
