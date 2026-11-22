@@ -401,6 +401,15 @@ footer.sticky-bottom {
   }
 }
 
+.post-title a,
+header h1 a {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  line-height: inherit;
+  vertical-align: baseline;
+}
+
 .pagination {
   .page-item {
     .page-link {
