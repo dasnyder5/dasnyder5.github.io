@@ -1,24 +1,7 @@
 ---
 permalink: /scholar/
-title: <a href='https://scholar.google.com/citations?user=sitpqg0AAAAJ&hl=en'>Google Scholar</a>
+title: Google Scholar
 nav: true
 nav_order: 5
+nav_link: https://scholar.google.com/citations?user=sitpqg0AAAAJ&hl=en
 ---
-<style>
-  h1 a,
-  .post-title a {
-    display: inline !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    line-height: inherit !important;
-    vertical-align: baseline !important;
-    position: static !important;
-    top: auto !important;
-  }
-  h1 a::before,
-  h1 a::after,
-  .post-title a::before,
-  .post-title a::after {
-    display: none !important;
-  }
-</style>
